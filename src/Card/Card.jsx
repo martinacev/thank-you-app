@@ -10,8 +10,13 @@ const Card = () => {
 
 	const handleButtonClick = (number) => {
 		setSelectedItems(number);
-		setShowThanks(true);
-		setShowContent(false);
+	};
+
+	const handleSubmit = () => {
+		if (selectedItems > 0) {
+			setShowThanks(true);
+			setShowContent(false);
+		}
 	};
 
 	return (
@@ -40,7 +45,9 @@ const Card = () => {
 								</button>
 							))}
 						</div>
-						<button className={classes.btn}>SUBMIT</button>
+						<button onClick={handleSubmit} className={classes.btn}>
+							SUBMIT
+						</button>
 					</>
 				)}
 

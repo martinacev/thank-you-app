@@ -46,8 +46,12 @@
 	color: white;
 }
 
-.circle:hover {
+.circle:focus {
 	background-color: orange;
+}
+
+.circle:hover {
+	background-color: grey;
 }
 
 .btn {
@@ -59,6 +63,7 @@
 	letter-spacing: 1.5px;
 	border-radius: 20px;
 	margin-top: 10px;
+	cursor: pointer;
 }
 
 .card {
