@@ -38,7 +38,9 @@ const Card = () => {
 							{[1, 2, 3, 4, 5].map((number) => (
 								<button
 									key={number}
-									className={classes.circle}
+									className={`${classes.circle} ${
+										selectedItems === number ? classes.selectedCircle : ""
+									}`}
 									onClick={() => handleButtonClick(number)}
 								>
 									{number}

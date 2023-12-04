@@ -36,7 +36,8 @@
 	gap: 40px;
 }
 
-.circle {
+.circle,
+.circle:active {
 	border-radius: 20px;
 	width: 40px;
 	height: 40px;
@@ -46,12 +47,12 @@
 	color: white;
 }
 
-.circle:focus {
-	background-color: orange;
-}
-
 .circle:hover {
 	background-color: grey;
+}
+
+.selectedCircle {
+	background-color: orange;
 }
 
 .btn {
